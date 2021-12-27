@@ -1,0 +1,1033 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+}
+
+.ul-navs {
+    display: none;
+}
+
+#info-intro {
+    letter-spacing: 1px;
+    background-color: black;
+    padding: 18px;
+    color: white;
+    text-align: center;
+}
+
+#logo img{
+    height: 120px;
+}
+
+#nav {
+    background-color: #e7bfdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cambios index version mobile */ 
+
+#img-portada {
+    display: none;
+}
+
+#portada {
+    background-image: url(img/portada1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#h1-index {
+    font-family:'Righteous';
+    font-weight: normal;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-top: 300px;
+}
+
+#h2-index {
+    font-family: 'Courgette';
+    font-weight: normal;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-left: 150px;
+}
+
+#link-menu {
+    color: #FFFFFF;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    border: 3px solid #FFFFFF;
+    margin: 80px 0 200px 0;
+    width: 20%;
+}
+
+
+#imagen-index-dos{
+    display: none;
+}
+
+#imagen-index-uno {
+    display: inline-block;
+}
+
+.info-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-article {
+    font-size: 28px;
+    text-align: center;
+    padding: 60px 10px 1px 10px;
+}
+
+.titulo-article2 {
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Courgette';
+    font-weight: normal;
+}
+
+.parrafo-article {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 40px 60px 40px;
+
+}
+
+#h3-section-tres {
+    background-image: url(img/ice-cream.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'Righteous';
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding: 70px;
+}
+ 
+
+/* Cambios para seccion Sabores version mobile */ 
+
+
+#nav-sabores {
+    background-color: #A7EEE1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#titulo-sabores {
+    background-color: #A7EEE1;
+    padding: 50px 0 90px 0;
+    font-family: 'Courgette';
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+}
+
+.h2-pags {
+    margin-left: 80px;
+}
+
+.grilla {
+    padding: 50px 40px 4px 40px ;
+    display: grid;
+
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+}
+
+.figures-grilla {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.figure-grid img {
+    width: 230px;
+    height: 230px;
+}
+
+.figure-grid {
+    text-align: center;
+    padding: 10px 10px 65px 10px;
+    overflow-y: hidden;
+}
+
+.figure-grid h3 {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.linea {
+    border-top: 3px solid black;
+    max-width: 300px;
+    padding: 0;
+    margin: auto;
+}
+
+.figure-grid p {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Cambios para seccion Eventos version mobile*/
+
+#img-frutilla {
+    display: none;
+}
+
+#img-eventos1 {
+    display: none;
+}
+
+#nav-eventos {
+    background-color: #FCC8D2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#titulo-eventos {
+    background-color: #FCC8D2;
+    padding: 50px 0 90px 0;
+    font-family: 'Courgette';
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+
+}
+
+.grid-pags {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr 28%;
+}
+
+header {
+    grid-column: 1/1;
+    grid-row: 1/2;
+}
+    
+main {
+    grid-column: 1/1;
+    grid-row: 2/3;
+}
+
+footer {
+    grid-column: 1/1;
+    grid-row: 3/4;
+}   
+
+.h3-pags {
+    font-family: 'Righteous';
+    font-size: 25px;
+    text-align: center;
+    padding: 80px 60px 5px 60px;
+}
+
+.h4-pags {
+    font-family: 'Courgette';
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.info-secciones p {
+    font-size: 18px;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-align: center;
+    line-height: 20px;
+    padding: 45px 70px 45px 70px;
+}
+
+.info-secciones p:nth-last-child(3n) {
+    padding-top: 0;
+}
+
+#img-eventos2 {
+    padding-top: 50px;
+    width: 100%;
+}
+
+/* Cambios para seccion sobre nosotros version mobile*/
+
+
+#nav-nosotros {
+    background-color: #FBE185;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-nosotros {
+    background-color: #FBE185;
+    padding: 50px 0 90px 0;
+    font-family: 'Courgette';
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+}
+
+#imagen-tienda {
+    display: none;
+}
+
+#imagen-creador {
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+#ultimo-p {
+    font-family: 'Courgette';
+    font-size: 25px;
+    padding-bottom: 70px
+}
+
+/* Cambios en seccion Contactenos version mobile */
+
+#nav-contacto {
+    background-color: #C9ABE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo-contacto {
+    background-color: #C9ABE1;
+    padding: 50px 0 90px 0;
+    font-family: 'Courgette';
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-style: normal;
+    color: white;
+}
+
+#p-contacto {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 60px;
+}
+
+#section-contacto {
+    margin-bottom: 300px;
+}
+
+
+#formulario {
+    font-size: small;
+    text-align:start;
+    background-color: rgba(20, 20, 20, 0.08);
+    width: 80%;
+    padding: 25px 40px 25px 40px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin: auto;
+}
+
+#formulario input {
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    width: 100%;
+    margin: 10px 15px 15px 0px;
+}
+
+#formulario label {
+    font-weight: bold;
+}
+
+#formulario input {
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    padding: 10px;
+    width: 100%;
+}
+
+#formulario input#input-mensaje {
+    padding: 50px;
+}
+    
+#img-formulario {
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+    right: 45px;
+    top: 1050px;
+}
+
+
+/*Cambios para footer version mobile*/
+
+#footer {
+    background-color: black;
+    padding: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.title-ul {
+    font-weight:bolder;
+    padding: 20px 20px 20px 0px;
+}
+
+#correo-footer input {
+    background-color: rgb(255, 253, 253);
+    border: 2px solid rgb(0, 0, 0);
+    width: 70%;
+    padding: 10px;
+}
+
+#enviar-footer input {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 252, 252);
+    width: 40%;
+    padding: 10px;
+    color: white;
+}
+
+#footer-rrss {
+    padding: 40px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.rrss-icon {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 7px 12px 7px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.rrss-icon a {
+    color: black;  
+}
+
+
+@media (min-width: 780px) and (max-width: 1000px) {
+
+    /* Cambios index version tablet */ 
+
+    #nav {
+        display: flex;
+        justify-content: space-around;
+        height: 150px;
+        font-weight: bold;
+    }
+
+    #logo img{
+        margin-right: 180px;
+    }
+    
+    .ul-navs {
+        display: flex;
+    }
+    
+    .ul-navs li {
+        padding: 10px;
+    }
+    
+    li.menu-links a {
+        color: rgb(102, 101, 101);
+        font-size: 14px;
+    }
+    
+    .rrss-icon1 {
+        margin: 5px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        font-size: 13px;
+    }
+    
+    .rrss-icon1 a{
+        color: white;
+    }
+
+    #portada {
+        background-image: url(img/portada.jpg);
+        background-position: center;
+    }
+
+    #h1-index {
+        font-size: 70px;
+    }
+    
+    #h2-index {
+        font-size: 45px;
+    }
+    
+    #link-menu {
+        font-size: 22px;
+        padding: 5px;
+        margin: 90px 0 200px 0;
+        width: 15%;
+    }
+
+    #imagen-index-dos {
+        display: none;
+    }
+
+    #imagen-index-uno {
+        display: inline-block;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 1fr 25%;
+    }
+
+    header {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    main {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    footer {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    
+    .info-index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-index img {
+        width: 50%;
+    }
+
+
+    /* Cambios sabores version tablet*/
+
+    #nav-sabores {
+        justify-content: space-around;
+    };
+    
+    #titulo-sabores {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+
+    .grilla {
+        padding: 50px 70px 70px 70px;
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5fr 5fr 5fr;
+    }
+
+    
+    .figures-grilla {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    
+    .figure-grid img {
+        width: 270px;
+        height: 230px;
+    }
+    
+    .figure-grid {
+        padding: 50px;
+        overflow-y: hidden;
+    }
+    
+
+    /* Cambios seccion eventos version tablet*/
+
+    #titulo-eventos {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    .info-secciones p {
+        padding: 60px 90px 50px 90px;
+    }
+
+    .info-secciones p:nth-last-child(3n) {
+        padding-top: 0;
+        padding-bottom: 90px;
+    }
+
+    .grid-pags {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 180px 1fr 24%;
+    }
+
+    #img-eventos1 {
+        padding-top: 5px;
+        display: inline-block;
+        width: 100%;
+    }
+    #img-eventos2 {
+        display: none;
+
+    }
+
+    /* Cambios en seccion sobre nosotros version tablet */
+
+
+    #nav-nosotros {
+        justify-content: space-around;
+    }
+
+    #titulo-nosotros {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    #contenedor-nosotros {
+        padding: 40px 0 30px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #imagen-creador {
+        padding: 0;
+    }
+
+    #contenedor-nosotros img {
+        width: 50%;
+    }
+
+    #imagen-tienda {
+        display: inline-block;
+    }
+
+    /* Cambios para seccion Contacto version tablet */
+    
+    #nav-contacto {
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    #formulario {
+        width: 60%;
+    }
+
+    #img-formulario {
+        width: 45%;
+        top: 960px;
+    }
+
+    /* Cambios footer version tablet*/
+
+    #footer {
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    #info-intro {
+        font-size: 20px;
+        padding: 15px;
+        font-weight: bolder;
+    }
+
+    #logo img{
+        height: 160px;
+        width: 165px;
+        margin-right: 250px;
+    }
+
+    #nav {
+        display: flex;
+        font-size: 20px;
+        justify-content: space-around;
+        height: 166px;
+        font-weight: bold;
+    }
+    
+    .ul-navs {
+        display: flex;
+    }
+    
+    .ul-navs li {
+        padding: 15px;
+    }
+    
+    li.menu-links a {
+        color: rgb(102, 101, 101);
+    }
+    
+    li.menu-links a:hover {
+        color: rgb(214, 0, 214);
+    }
+    
+    .rrss-icon1 {
+        margin: 5px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+    
+    .rrss-icon1 a{
+        color: white;
+    }
+    
+
+    /* Cambios index version tablet */ 
+
+    #portada {
+        background-image: url(img/portada.jpg);
+        background-position: center;
+    }
+
+    #h1-index {
+        font-size: 90px;
+    }
+    
+    #h2-index {
+        font-size: 65px;
+    }
+    
+    #link-menu {
+        font-size: 25px;
+        font-weight: bold;
+        padding: 5px;
+        margin: 90px 0 200px 0;
+        width: 9%;
+    }
+
+    #imagen-index-dos {
+        display: none;
+    }
+
+    #imagen-index-uno {
+        display: inline-block;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 1fr 12%;
+    }
+
+    header {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    
+    main {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    footer {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #h3-section-tres {
+        height: 500px;
+        font-size: 70px;
+        letter-spacing: 10px;
+        padding: 110px;
+    }
+    
+    .info-index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-index img {
+        width: 50%;
+    }
+
+    .titulo-article {
+        font-size: 30px;
+        padding: 90px 10px 1px 10px;
+    }
+    
+    .titulo-article2 {
+        font-size: 25px;
+        padding-bottom: 30px;
+    }
+    
+    .parrafo-article {
+        font-size: 22px;
+        padding: 5px 100px 60px 100px;
+    }
+    
+
+    /* Cambios sabores version desktop*/
+
+    #nav-sabores {
+        display: flex;
+        font-size: 20px;
+        justify-content: space-around;
+        height: 166px;
+        font-weight: bold;
+    }
+
+    #titulo-sabores {
+        font-size: 46px;
+        letter-spacing: 3px;
+    }
+
+    .grilla {
+        padding: 50px 70px 70px 70px;
+        display: grid;
+        grid-template-areas: 
+            "figures grilla";
+    
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 5fr 5fr 5fr;
+    }
+
+    .figures-grilla {
+        grid-area: article figures;
+    }
+    
+    .figure-grid img {
+        width: 270px;
+        height: 230px;
+    }
+    
+    .figure-grid {
+        padding: 50px;
+    }
+
+    .figure-grid h3 {
+        font-size: 25px;
+    }
+    
+
+    /* Cambios eventos version desktop */
+
+    #nav-eventos {
+        font-size: 20px;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    #titulo-eventos {
+        font-size: 46px;
+        letter-spacing: 3px;
+    }
+    
+    .h3-pags {
+        padding-top: 100px;
+        font-size: 30px;
+    }
+    
+    .h4-pags {
+        font-size: 28px;
+    }
+
+    .info-secciones p {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 60px 200px 50px 200px;
+        padding: 0 100px 0 100px;
+    }
+
+    .info-secciones p:nth-last-child(3n) {
+        padding-top: 0;
+        padding-bottom: 70px;
+    }
+
+    .grid-pags {
+        grid-template-rows: 180px 1fr 17%;
+    }
+
+    #img-frutilla {
+        display: inline-block;
+        position: absolute;
+        z-index: 100;
+        width: 22%;
+        right: 2px;
+        top: 250px;
+    }
+
+    #img-eventos1 {
+        padding-top: 5px;
+        display: inline-block;
+        height: 600px;
+        width: 100%;
+    }
+
+    #img-eventos2 {
+        display: none;
+    }
+
+    /* Cambios sobre nosotros version desktop */
+
+
+    #nav-nosotros {
+        font-size: 20px;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    #titulo-nosotros {
+        font-size: 46px;
+        letter-spacing: 3px;
+    }
+
+    #contenedor-nosotros {
+        padding: 40px 0 30px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #imagen-creador {
+        padding: 0;
+    }
+
+    #contenedor-nosotros img {
+        width: 50%;
+    }
+
+    #imagen-tienda {
+        display: inline-block;
+    }
+
+    /* Cambios para seccion Contacto version desktop*/ 
+
+    .grid-pags {
+        grid-template-rows: 180px 1fr 17%;
+    }
+
+    #nav-contacto {
+        font-size: 20px;
+        justify-content: space-around;
+        font-weight: bold;
+    }
+
+    #titulo-contacto {
+        font-size: 55px;
+        padding: 50px 0 140px 0;
+        letter-spacing: 3px;
+    }
+
+    #formulario input {
+        font-size: 20px;
+    }
+
+    #p-contacto {
+        font-size: 24px;
+    }
+
+    #formulario {
+        font-size:larger;
+        width: 40%;
+    }
+
+    #img-formulario {
+        width: 35%;
+        top: 950px;
+    }
+
+
+    /* Cambios para footer version desktop*/
+
+    #footer {
+        font-size: 18px;
+    }
+
+    #footer-uls {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #correo-footer input {
+        width: 100%;
+    }
+
+    .rrss-icon {
+        font-size: 18px;
+    }
+
+    .rrss-icon a {
+        color: black;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
