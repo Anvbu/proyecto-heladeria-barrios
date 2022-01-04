@@ -14,12 +14,7 @@ body {
     font-size: 16px;
 }
 
-.ul-navs {
-    display: none;
-}
-
 #info-intro {
-    letter-spacing: 1px;
     background-color: black;
     padding: 18px;
     color: white;
@@ -28,7 +23,10 @@ body {
 
 #logo img{
     height: 120px;
-    margin-right: 30px;
+}
+
+#logo2 img{
+    display: none;
 }
 
 p {
@@ -36,28 +34,39 @@ p {
     margin-bottom: 0;
 }
 
-.bg-light {
+.bg-light1 {
     background-color: #e7bfdd!important;
 }
 
 .navbar {
     display: flex;
-    flex-direction: row-reverse;
-    background-color: #e7bfdd;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+
+ul.navbar-nav {
+    height: 100vh;
+    justify-content: space-evenly;
 }
 
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
-    border-color: rgba(0,0,0,.1);
-    margin-left: 30px;
 }
 
 .navbar-toggler {
     color: black;
 }
 
+.nav-item {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
 
+.navbar-navRRSS {
+    display: none;
+}
 
 
 /* Cambios index version mobile */ 
@@ -152,12 +161,8 @@ p {
 
 /* Cambios para seccion Sabores version mobile */ 
 
-
-#nav-sabores {
-    background-color: #A7EEE1;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.bg-light2 {
+    background-color: #A7EEE1!important;
 }
 
 #titulo-sabores {
@@ -173,6 +178,7 @@ p {
 
 .h2-pags {
     margin-left: 80px;
+    font-size: 40px;
 }
 
 .grilla {
@@ -430,14 +436,12 @@ footer {
 #correo-footer input {
     background-color: rgb(255, 253, 253);
     border: 2px solid rgb(0, 0, 0);
-    width: 70%;
     padding: 10px;
 }
 
 #enviar-footer input {
     background-color: rgb(0, 0, 0);
     border: 2px solid rgb(255, 252, 252);
-    width: 40%;
     padding: 10px;
     color: white;
 }
@@ -465,42 +469,6 @@ footer {
 @media (min-width: 780px) and (max-width: 1000px) {
 
     /* Cambios index version tablet */ 
-
-    #nav {
-        display: flex;
-        justify-content: space-around;
-        height: 150px;
-        font-weight: bold;
-    }
-
-    #logo img{
-        margin-right: 180px;
-    }
-    
-    .ul-navs {
-        display: flex;
-    }
-    
-    .ul-navs li {
-        padding: 10px;
-    }
-    
-    li.menu-links a {
-        color: rgb(102, 101, 101);
-        font-size: 14px;
-    }
-    
-    .rrss-icon1 {
-        margin: 5px;
-        background-color: black;
-        color: white;
-        border-radius: 50%;
-        font-size: 13px;
-    }
-    
-    .rrss-icon1 a{
-        color: white;
-    }
 
     #portada {
         background-image: url(img/portada.jpg);
@@ -714,44 +682,40 @@ footer {
     }
 
     #logo img{
-        height: 160px;
-        width: 165px;
-        margin-right: 250px;
+        display: none;
     }
 
-    #nav {
+    #logo2 img{
+        display: inline-block;
+        height: 160px;
+        width: 165px;
+        margin-right: 300px;
+    }
+
+    ul.navbar-nav {
+        height: auto;
         display: flex;
-        font-size: 20px;
-        justify-content: space-around;
-        height: 166px;
-        font-weight: bold;
+        margin-left: 50px;
     }
     
-    .ul-navs {
+    .navbar-navRRSS {
         display: flex;
     }
     
-    .ul-navs li {
-        padding: 15px;
-    }
-    
-    li.menu-links a {
-        color: rgb(102, 101, 101);
-    }
-    
-    li.menu-links a:hover {
+    .nav-item a:hover {
         color: rgb(214, 0, 214);
     }
     
-    .rrss-icon1 {
-        margin: 5px;
+    .nav-itemRRSS {
+        margin: 10px;
+        padding: 10px;
         background-color: black;
         color: white;
         border-radius: 50%;
         font-size: 18px;
     }
     
-    .rrss-icon1 a{
+    .nav-itemRRSS a{
         color: white;
     }
     
@@ -854,14 +818,6 @@ footer {
     }
 
     /* Cambios sabores version desktop*/
-
-    #nav-sabores {
-        display: flex;
-        font-size: 20px;
-        justify-content: space-around;
-        height: 166px;
-        font-weight: bold;
-    }
 
     #titulo-sabores {
         font-size: 46px;
