@@ -1,0 +1,292 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Righteous&family=Roboto+Condensed:wght@300&display=swap');
+
+// fuentes
+
+$font1: 'Courgette', cursive;
+$font2: 'Righteous', cursive;
+$font3: 'Roboto Condensed', sans-serif;
+
+//paleta de colores
+
+$color1: black;
+$color2: white;
+$color3: #e7bfdd;
+$color4: #A7EEE1;
+$color5: #FBE185;
+$color6: #C9ABE1;
+
+
+//SCSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: $color2;
+    font-family: $font3;
+    font-size: 16px;
+}
+
+//Version mobile
+
+#info-intro {
+    background-color: $color1;
+    padding: 18px;
+    color: $color2;
+    text-align: center;
+}
+
+#logo img {
+    height: 120px;
+}
+    
+#logo2 img {
+       display: none;
+}
+    
+p, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bg-light1 {
+    background-color: $color3 !important;
+}
+    
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+    
+ul.navbar-nav {
+    height: 100vh;
+    justify-content: space-evenly;
+}
+    
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+}
+    
+.navbar-toggler {
+    color: $color1;
+}
+    
+.nav-item {
+    font-size: 20px;
+    color: $color1;
+    font-weight: bold;
+    text-align: center;
+}
+    
+.navbar-navRRSS {
+    display: none;
+}
+
+//Cambios index 
+
+#img-portada {
+    display: none;
+}
+    
+#portada {
+    background-image: url(img/portada1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    h1 {
+        font-family: $font2;
+        font-weight: normal;
+        font-size: 50px;
+        color: $color2;
+        margin-top: 300px;
+    }
+
+    h2 {
+        font-family: $font1;
+        font-weight: normal;
+        font-size: 30px;
+        color: $color2;
+        margin-left: 150px;
+    }
+}
+    
+    
+#link-menu {
+    color: $color2;
+    font-family: $font3;
+    font-size: 22px;
+    border: 3px solid $color2;
+    margin: 80px 0 200px 0;
+    width: 20%;
+}
+    
+    
+#imagen-index-dos {
+    display: none;
+}
+    
+#imagen-index-uno {
+    display: inline-block;
+}
+
+
+.info-index {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+        padding: 60px 10px 1px 10px;
+    }
+
+    h3 {
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 40px;
+        font-family: $font1;
+        font-weight: normal;
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0 40px 60px 40px;
+    }
+
+}
+    
+#h3-section-tres {
+    background-image: url(img/ice-cream.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: $color2;
+    font-family: $font2;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding: 60px;
+}
+
+// Version tablet
+
+//Cambios index
+
+@media (min-width: 780px) and (max-width: 1000px) {
+
+    #portada {
+        background-image: url(img/portada.jpg);
+        background-position: center;
+
+        h1 {
+            font-size: 70px;
+        }
+        
+        h2 {
+            font-size: 45px;
+        }
+    }
+    
+        
+    #link-menu {
+        font-size: 22px;
+        padding: 5px;
+        margin: 90px 0 200px 0;
+        width: 15%;
+    }
+        
+    #imagen-index-dos {
+        display: none;
+    }
+        
+    #imagen-index-uno {
+        display: inline-block;
+    }
+        
+    .info-index {
+        display: flex;
+        flex-direction: row;
+
+        article:first-of-type:hover {
+            transform: translate(9px, 0);
+        }
+
+         article:nth-child(even):hover {
+            transform: translate(-9px, 0);
+
+        }
+
+        article {
+            transition: 1s ease-in-out;
+        }
+
+        img {
+             width: 50%;
+        }
+    }
+    
+}
+
+// Version desktop 
+
+// Cambios index 
+
+@media (min-width: 1000px) {
+    
+    #info-intro {
+        font-size: 20px;
+        padding: 15px;
+        font-weight: bolder;
+    }
+    
+    #logo img {
+        display: none;
+    }
+    
+    #logo2 img {
+        display: inline-block;
+        height: 160px;
+        width: 165px;
+        margin-right: 300px;
+    }
+    
+    ul.navbar-nav {
+        height: auto;
+        display: flex;
+        margin-left: 150px;
+    }
+    
+    .navbar-navRRSS {
+        display: flex;
+    }
+    
+    .nav-itemRRSS {
+        margin: 10px;
+        padding: 11px 14px;
+        background-color: $color1;
+        color: $color2;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+    
+    .nav-itemRRSS a {
+        color: $color2;
+    }
+
+}
+
+
+

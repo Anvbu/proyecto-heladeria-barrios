@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Righteous&family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+}
+
+#info-intro {
+  background-color: black;
+  padding: 18px;
+  color: white;
+  text-align: center;
+}
+
+#logo img {
+  height: 120px;
+}
+
+#logo2 img {
+  display: none;
+}
+
+p, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bg-light1 {
+  background-color: #e7bfdd !important;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul.navbar-nav {
+  height: 100vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler {
+  color: black;
+}
+
+.nav-item {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-navRRSS {
+  display: none;
+}
+
+#img-portada {
+  display: none;
+}
+
+#portada {
+  background-image: url(img/portada1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portada h1 {
+  font-family: "Righteous", cursive;
+  font-weight: normal;
+  font-size: 50px;
+  color: white;
+  margin-top: 300px;
+}
+
+#portada h2 {
+  font-family: "Courgette", cursive;
+  font-weight: normal;
+  font-size: 30px;
+  color: white;
+  margin-left: 150px;
+}
+
+#link-menu {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+  border: 3px solid white;
+  margin: 80px 0 200px 0;
+  width: 20%;
+}
+
+#imagen-index-dos {
+  display: none;
+}
+
+#imagen-index-uno {
+  display: inline-block;
+}
+
+.info-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-index h2 {
+  font-size: 28px;
+  text-align: center;
+  padding: 60px 10px 1px 10px;
+}
+
+.info-index h3 {
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: "Courgette", cursive;
+  font-weight: normal;
+}
+
+.info-index p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 40px 60px 40px;
+}
+
+#h3-section-tres {
+  background-image: url(img/ice-cream.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 60px;
+}
+
+@media (min-width: 780px) and (max-width: 1000px) {
+  #portada {
+    background-image: url(img/portada.jpg);
+    background-position: center;
+  }
+  #portada h1 {
+    font-size: 70px;
+  }
+  #portada h2 {
+    font-size: 45px;
+  }
+  #link-menu {
+    font-size: 22px;
+    padding: 5px;
+    margin: 90px 0 200px 0;
+    width: 15%;
+  }
+  #imagen-index-dos {
+    display: none;
+  }
+  #imagen-index-uno {
+    display: inline-block;
+  }
+  .info-index {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info-index article:first-of-type:hover {
+    -webkit-transform: translate(9px, 0);
+            transform: translate(9px, 0);
+  }
+  .info-index article:nth-child(even):hover {
+    -webkit-transform: translate(-9px, 0);
+            transform: translate(-9px, 0);
+  }
+  .info-index article {
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+  .info-index img {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #info-intro {
+    font-size: 20px;
+    padding: 15px;
+    font-weight: bolder;
+  }
+  #logo img {
+    display: none;
+  }
+  #logo2 img {
+    display: inline-block;
+    height: 160px;
+    width: 165px;
+    margin-right: 300px;
+  }
+  ul.navbar-nav {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 150px;
+  }
+  .navbar-navRRSS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav-itemRRSS {
+    margin: 10px;
+    padding: 11px 14px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  .nav-itemRRSS a {
+    color: white;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
