@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Righteous&family=Roboto+Condensed:wght@300&display=swap');
 
 // fuentes
@@ -35,7 +34,7 @@ body {
     font-size: 16px;
 }
 
-//Version mobile
+//Version mobile - Nav
 
 #info-intro {
     background-color: $color1;
@@ -90,6 +89,120 @@ ul.navbar-nav {
     display: none;
 }
 
+// Version mobile - index
+
+#img-portada {
+    display: none;
+}
+    
+#portada {
+    background-image: url("img/portada1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    h1 {
+        font-family: $font2;
+        font-weight: normal;
+        font-size: 50px;
+        color: $color2;
+        margin-top: 300px;
+    }
+
+    h2 {
+        font-family: $font1;
+        font-weight: normal;
+        font-size: 30px;
+        color: $color2;
+        margin-left: 150px;
+    }
+
+}
+    
+    
+#link-menu {
+    color: $color2;
+    font-family: $font3;
+    font-size: 22px;
+    border: 3px solid $color2;
+    margin: 80px 0 200px 0;
+    width: 20%;
+}
+    
+
+.info-index {
+
+    display: flex;
+    flex-direction: column;
+
+
+    #imagen-index-dos{
+        display: none;
+    }
+    
+    #imagen-index-uno {
+        display: inline-block;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+        padding: 60px 10px 1px 10px;
+    }
+
+    h3 {
+        font-size: 21px;
+        text-align: center;
+        padding-bottom: 40px;
+        font-family: $font1;
+        font-weight: normal;
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 0 40px 60px 40px;
+    }
+
+}
+
+    
+#h3-section-tres {
+    background-image: url("img/ice-cream.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: $color2;
+    font-family: $font2;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding: 60px;
+}
+
+
+
+//Version mobile - menú
+
+
+
+
+
+
+
+//Version mobile - contacto
+
+
+
+
+
 //footer 
 
 #footer {
@@ -137,96 +250,6 @@ ul.navbar-nav {
     }
 }
 
-//Cambios index 
-
-#img-portada {
-    display: none;
-}
-    
-#portada {
-    background-image: url(img/portada1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-
-    h1 {
-        font-family: $font2;
-        font-weight: normal;
-        font-size: 50px;
-        color: $color2;
-        margin-top: 300px;
-    }
-
-    h2 {
-        font-family: $font1;
-        font-weight: normal;
-        font-size: 30px;
-        color: $color2;
-        margin-left: 150px;
-    }
-}
-    
-    
-#link-menu {
-    color: $color2;
-    font-family: $font3;
-    font-size: 22px;
-    border: 3px solid $color2;
-    margin: 80px 0 200px 0;
-    width: 20%;
-}
-    
-    
-#imagen-index-dos {
-    display: none;
-}
-    
-#imagen-index-uno {
-    display: inline-block;
-}
-
-
-.info-index {
-    display: flex;
-    flex-direction: column;
-
-    h2 {
-        font-size: 28px;
-        text-align: center;
-        padding: 60px 10px 1px 10px;
-    }
-
-    h3 {
-        font-size: 21px;
-        text-align: center;
-        padding-bottom: 40px;
-        font-family: $font1;
-        font-weight: normal;
-    }
-
-    p {
-        text-align: center;
-        font-weight: bold;
-        font-size: 18px;
-        padding: 0 40px 60px 40px;
-    }
-
-}
-    
-#h3-section-tres {
-    background-image: url(img/ice-cream.jpg);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: $color2;
-    font-family: $font2;
-    font-size: 40px;
-    letter-spacing: 10px;
-    padding: 60px;
-}
 
 // Version tablet
 
@@ -235,7 +258,8 @@ ul.navbar-nav {
 @media (min-width: 780px) and (max-width: 1000px) {
 
     #portada {
-        background-image: url(img/portada.jpg);
+        background-image: url("img/portada.jpg");
+
         background-position: center;
 
         h1 {
@@ -255,17 +279,22 @@ ul.navbar-nav {
         width: 15%;
     }
         
-    #imagen-index-dos {
-        display: none;
-    }
-        
-    #imagen-index-uno {
-        display: inline-block;
-    }
         
     .info-index {
         display: flex;
         flex-direction: row;
+
+        #imagen-index-dos {
+            display: none;
+        }
+            
+        #imagen-index-uno {
+            display: inline-block;
+        }
+
+        img {
+            width: 50%;
+        }
 
         article:first-of-type:hover {
             transform: translate(9px, 0);
@@ -273,16 +302,13 @@ ul.navbar-nav {
 
          article:nth-child(even):hover {
             transform: translate(-9px, 0);
-
         }
 
         article {
             transition: 1s ease-in-out;
         }
 
-        img {
-             width: 50%;
-        }
+
     }
     
 }
@@ -333,7 +359,15 @@ ul.navbar-nav {
         color: $color2;
     }
 
-    //footer desktop
+    .info-index {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            width: 50%;
+        }
+    }
+    
 
     #footer {
         font-size: 18px;
@@ -362,6 +396,3 @@ ul.navbar-nav {
     
 
 }
-
-
-

@@ -75,6 +75,107 @@ ul.navbar-nav {
   display: none;
 }
 
+#img-portada {
+  display: none;
+}
+
+#portada {
+  background-image: url("img/portada1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portada h1 {
+  font-family: "Righteous", cursive;
+  font-weight: normal;
+  font-size: 50px;
+  color: white;
+  margin-top: 300px;
+}
+
+#portada h2 {
+  font-family: "Courgette", cursive;
+  font-weight: normal;
+  font-size: 30px;
+  color: white;
+  margin-left: 150px;
+}
+
+#link-menu {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+  border: 3px solid white;
+  margin: 80px 0 200px 0;
+  width: 20%;
+}
+
+.info-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-index #imagen-index-dos {
+  display: none;
+}
+
+.info-index #imagen-index-uno {
+  display: inline-block;
+}
+
+.info-index img {
+  width: 100%;
+}
+
+.info-index h2 {
+  font-size: 28px;
+  text-align: center;
+  padding: 60px 10px 1px 10px;
+}
+
+.info-index h3 {
+  font-size: 21px;
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: "Courgette", cursive;
+  font-weight: normal;
+}
+
+.info-index p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 40px 60px 40px;
+}
+
+#h3-section-tres {
+  background-image: url("img/ice-cream.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 60px;
+}
+
 #footer {
   background-color: black;
   padding: 40px;
@@ -123,106 +224,9 @@ ul.navbar-nav {
   color: black;
 }
 
-#img-portada {
-  display: none;
-}
-
-#portada {
-  background-image: url(img/portada1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#portada h1 {
-  font-family: "Righteous", cursive;
-  font-weight: normal;
-  font-size: 50px;
-  color: white;
-  margin-top: 300px;
-}
-
-#portada h2 {
-  font-family: "Courgette", cursive;
-  font-weight: normal;
-  font-size: 30px;
-  color: white;
-  margin-left: 150px;
-}
-
-#link-menu {
-  color: white;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 22px;
-  border: 3px solid white;
-  margin: 80px 0 200px 0;
-  width: 20%;
-}
-
-#imagen-index-dos {
-  display: none;
-}
-
-#imagen-index-uno {
-  display: inline-block;
-}
-
-.info-index {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.info-index h2 {
-  font-size: 28px;
-  text-align: center;
-  padding: 60px 10px 1px 10px;
-}
-
-.info-index h3 {
-  font-size: 21px;
-  text-align: center;
-  padding-bottom: 40px;
-  font-family: "Courgette", cursive;
-  font-weight: normal;
-}
-
-.info-index p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 0 40px 60px 40px;
-}
-
-#h3-section-tres {
-  background-image: url(img/ice-cream.jpg);
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  color: white;
-  font-family: "Righteous", cursive;
-  font-size: 40px;
-  letter-spacing: 10px;
-  padding: 60px;
-}
-
 @media (min-width: 780px) and (max-width: 1000px) {
   #portada {
-    background-image: url(img/portada.jpg);
+    background-image: url("img/portada.jpg");
     background-position: center;
   }
   #portada h1 {
@@ -237,12 +241,6 @@ ul.navbar-nav {
     margin: 90px 0 200px 0;
     width: 15%;
   }
-  #imagen-index-dos {
-    display: none;
-  }
-  #imagen-index-uno {
-    display: inline-block;
-  }
   .info-index {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -251,6 +249,15 @@ ul.navbar-nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .info-index #imagen-index-dos {
+    display: none;
+  }
+  .info-index #imagen-index-uno {
+    display: inline-block;
+  }
+  .info-index img {
+    width: 50%;
   }
   .info-index article:first-of-type:hover {
     -webkit-transform: translate(9px, 0);
@@ -263,9 +270,6 @@ ul.navbar-nav {
   .info-index article {
     -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
-  }
-  .info-index img {
-    width: 50%;
   }
 }
 
@@ -306,6 +310,18 @@ ul.navbar-nav {
   }
   .nav-itemRRSS a {
     color: white;
+  }
+  .info-index {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .info-index img {
+    width: 50%;
   }
   #footer {
     font-size: 18px;
