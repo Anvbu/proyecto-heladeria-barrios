@@ -226,7 +226,6 @@ ul.navbar-nav {
 
 @media (min-width: 780px) and (max-width: 1000px) {
   #portada {
-    background-image: url("imgportada.jpg");
     background-position: center;
   }
   #portada h1 {
