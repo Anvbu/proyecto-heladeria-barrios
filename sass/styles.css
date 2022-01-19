@@ -160,7 +160,7 @@ ul.navbar-nav {
 .info-index p {
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 40px 60px 40px;
 }
 
@@ -319,6 +319,15 @@ ul.navbar-nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .info-index h2 {
+    font-size: 32px;
+  }
+  .info-index h3 {
+    font-size: 25px;
+  }
+  .info-index p {
+    font-size: 24px;
   }
   .info-index img {
     width: 50%;
