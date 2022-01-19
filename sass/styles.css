@@ -226,7 +226,7 @@ ul.navbar-nav {
 
 @media (min-width: 780px) and (max-width: 1000px) {
   #portada {
-    background-image: url("img/portada.jpg");
+    background-image: url("imgportada.jpg");
     background-position: center;
   }
   #portada h1 {
@@ -322,6 +322,27 @@ ul.navbar-nav {
   }
   .info-index img {
     width: 50%;
+  }
+  .nav-itemRRSStwitter {
+    background: #51aff8;
+    margin: 10px;
+    padding: 11px 14px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  .nav-itemRRSSfacebook {
+    background: #2956a3;
+    margin: 10px;
+    padding: 11px 14px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+  .nav-itemRRSSinstagram {
+    background: #da7134;
+    margin: 10px;
+    padding: 11px 14px;
+    border-radius: 50%;
+    font-size: 18px;
   }
   #footer {
     font-size: 18px;

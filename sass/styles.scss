@@ -89,6 +89,8 @@ ul.navbar-nav {
     display: none;
 }
 
+
+
 // Version mobile - index
 
 #img-portada {
@@ -212,7 +214,6 @@ ul.navbar-nav {
     font-size: 16px;
 }
 
-
 .title-ul {
     font-weight: bolder;
     padding: 20px 20px 20px 0px;
@@ -245,7 +246,7 @@ ul.navbar-nav {
         font-size: 15px;
     }
 
-    li a{
+    li a {
         color: $color1;
     }
 }
@@ -258,8 +259,7 @@ ul.navbar-nav {
 @media (min-width: 780px) and (max-width: 1000px) {
 
     #portada {
-        background-image: url("img/portada.jpg");
-
+        background-image: url("img\portada.jpg");
         background-position: center;
 
         h1 {
@@ -367,7 +367,31 @@ ul.navbar-nav {
             width: 50%;
         }
     }
+
+    // Mapa
+
+    $redes: (
+        twitter: #51aff8,
+        facebook: #2956a3,
+        instagram: #da7134, 
+    );
+
+    @each $red, $color in $redes {
+        .nav-itemRRSS#{$red} {
+            background: $color;  
+            margin: 10px;
+            padding: 11px 14px;
+            border-radius: 50%;
+            font-size: 18px;      
+        }
+    };
+
+    // Mixin e include 
+
     
+
+
+
 
     #footer {
         font-size: 18px;
