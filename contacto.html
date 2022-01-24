@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Heladeria en Buenos Aires Argentina, servicio de eventos y catering">
-    <meta name="keywords" content="HELADERIA, LOREM, CABA, CATERING, POSTRES">
-    <title> Helados Lorem </title>
+    <meta name="keywords" content="HELADERIA, LOREM, CABA, CATERING, POSTRES, CONTACTO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Righteous&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
     <link rel="stylesheet" href="sass/styles.css">
 
     <script src="https://kit.fontawesome.com/10716bc16d.js" crossorigin="anonymous"></script>
@@ -25,7 +29,7 @@
 
         <p id="info-intro"> Adolfo Alsina 1926, CABA, CP 1090 | Todos los días 10:00Hs - 23:00Hs </p>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light4">
 
             <a href="index.html" id="logo"> <img src="img/logo.png" alt=""> </a>
 
@@ -57,61 +61,40 @@
 
         </nav>
 
-
     </header>
 
     <main>
 
-        <section id="portada">
+        <section id="seccion-contacto">
 
-            <h1> HELADO</h1>
-            <h2> Artesanal</h2>
-
-            <a href="sabores.html" id="link-menu"> Menú </a>
-
-        </section>
-
-        <section class="info-index">
-
-            <img src="img/imagenindex.jpg" alt="" id="imagen-index-uno">
-
-            <article id="article-index">
-                <h2>NUESTROS SABORES</h2>
-                <h3> ¡Livianos y saludables! </h3>
-
-                <p>
-                    Después de 100 años de experiencia en la elaboración de helados artesanales, nace un
-                    espacio donde se combina la sólida tradición familiar y la creatividad en constante evolución,
-                    para ofrecer a nuestros clientes productos de la más alta calidad y al mismo tiempo satisfacer los
-                    más variados gustos. Así, en Lorem se puede elegir desde el más exclusivo helado y un petit
-                    gateaux hasta una café expresso al mejor estilo italiano. Desde nuestro local, nos preocupamos por
-                    brindar un servicio excepcional en medio de un clima acogedor y de elegante confort.
-
-                </p>
+            <article id="titulo-contacto">
+                <h1>Contactenos</h1>
             </article>
 
-            <img src="img/imagenindex.jpg" alt="" id="imagen-index-dos">
+            <p id="p-contacto">
+                Si tienes alguna consulta, por favor completa el siguiente formulario. Nos pondremos en contacto con vos
+                lo antes posible.
+            </p>
 
-        </section>
+            <form action="enviar.php" method="POST" enctype="application/x-www-form-urlencoded" id="formulario">
+                <label for="nombre"> Nombre: <br>
+                    <input type="text" name="name" id="" required>
+                </label> <br>
+                <label for="apellido"> Apellido: <br>
+                    <input type="text" name="lastname" id="" required>
+                </label><br>
+                <label for="correo"> Correo electrónico: <br>
+                    <input type="email" name="email" id="" placeholder="tunombre@info.com">
+                </label><br>
+                <label for="telefono"> Teléfono: <br>
+                    <input type="text" name="phone" id="">
+                </label><br>
+                <label for="mensaje"> Mensaje: <br>
+                    <input type="textarea" name="message" id="input-mensaje" required>
+                </label><br>
+                <input type="submit" name="send" id="" required>
 
-        <h3 id="h3-section-tres">LIBRE <br> DE <br> LACTOSA</h3>
-
-
-        <section class="info-index">
-
-            <article id="article-index">
-                <h2>POSTRES</h2>
-                <h3>¡Y mucho más!</h3>
-
-                <p>
-                    Como amamos el helado y sabemos que vos también lo amas, decidimos elaborar una versión
-                    saludable para que los fanáticos lo podamos disfrutar todos los días, nuestro objetivo es que sea
-                    perfecto lo hacemos sin azúcar, sin grasas y libre de TACC para incluir a todos. Y lo mejor para el
-                    final... ¡es delicioso, cremoso y nutritivo! Contamos con un amplio menú que comprende diferentes
-                    sabores de helados, paletas, batidos, jugos, y bebidas calientes. Además de tortas, budines, medialunas para ofrecerte la mejor experiencia. </p>
-            </article>
-
-            <img src="img/imagen3index.jpg" alt="">
+            </form>
 
         </section>
 
@@ -160,9 +143,12 @@
 
             <article>
                 <ul id="footer-rrss">
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="rrss-icon"><a href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li class="rrss-icon"><a href="https://www.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li class="rrss-icon"><a href="https://www.twitter.com/" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
                 </ul>
             </article>
         </section>
