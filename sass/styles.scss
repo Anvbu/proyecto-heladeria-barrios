@@ -23,7 +23,7 @@ $color7: #dc7692;
 
 
 .parrafos {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     word-spacing: 2px;
     text-align: center;
@@ -114,10 +114,6 @@ ul.navbar-nav {
 
 // Version mobile - index
 
-#img-portada {
-    display: none;
-}
-
 #portada {
     background-image: url("../img/portada1.jpg");
     background-size: cover;
@@ -191,7 +187,7 @@ ul.navbar-nav {
     p {
         text-align: center;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         padding: 0 40px 60px 40px;
     }
 
@@ -225,7 +221,6 @@ ul.navbar-nav {
     }
 
     h2 {
-        margin-left: 80px;
         font-size: 50px;
     }
 }
@@ -312,7 +307,6 @@ ul.navbar-nav {
     }
 
     h2 {
-        margin-left: 80px;
         font-size: 50px;
     }
 
@@ -332,7 +326,6 @@ ul.navbar-nav {
         font-size: 26px;
         font-weight: normal;
         text-align: center;
-        padding-left: 100px;
     }
 
     p {
@@ -360,7 +353,6 @@ ul.navbar-nav {
     }
 
     h2 {
-        margin-left: 80px;
         font-size: 50px;
     }
 }
@@ -379,7 +371,6 @@ ul.navbar-nav {
         font-size: 26px;
         font-weight: normal;
         text-align: center;
-        padding-left: 100px;
     }
 
     p {
@@ -427,7 +418,7 @@ ul.navbar-nav {
 
     p {
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: bolder;
         padding: 60px;
     }
@@ -573,6 +564,10 @@ ul.navbar-nav {
 
     #titulo-sabores {
         @extend .titulosTablet;
+
+        h2 {
+            margin-left: 80px;
+        }
     }
 
     .grilla {
@@ -603,12 +598,20 @@ ul.navbar-nav {
 
     #titulo-eventos {
         @extend .titulosTablet;
+
+        h2 {
+            margin-left: 80px;
+        }
     }
 
     .info-secciones {
 
         p {
             padding: 60px 90px 50px 90px;
+        }
+
+        h4 {
+            padding-left: 100px;
         }
 
         p:nth-last-child(3n) {
@@ -636,6 +639,10 @@ ul.navbar-nav {
 
     #titulo-nosotros {
         @extend .titulosTablet;
+
+        h2 {
+            margin-left: 80px;
+        }
     }
 
     .info-secciones {
@@ -645,6 +652,10 @@ ul.navbar-nav {
             justify-content: center;
             padding: 40px 0 30px 0;
             width: 100%;
+
+            h4 {
+                padding-left: 100px;
+            }
 
             #imagen-tienda {
                 display: inline-block;
@@ -765,6 +776,10 @@ ul.navbar-nav {
 
     #titulo-sabores {
         @extend .titulosDesktop;
+        
+        h2{
+            margin-left: 80px;
+        }
     }
 
 
@@ -809,6 +824,11 @@ ul.navbar-nav {
 
     #titulo-eventos {
         @extend .titulosDesktop;
+
+        h2 {
+            margin-left: 80px;
+        }
+
     }
 
     .info-secciones {
@@ -820,6 +840,7 @@ ul.navbar-nav {
 
         h4 {
             font-size: 28px;
+            padding-left: 100px;
         }
 
         p {
@@ -866,6 +887,10 @@ ul.navbar-nav {
 
     #titulo-nosotros {
         @extend .titulosDesktop;
+
+        h2 {
+            margin-left: 80px;
+        }
     }
 
     .info-secciones {
@@ -875,6 +900,10 @@ ul.navbar-nav {
             line-height: 30px;
             margin: 60px 200px 50px 200px;
             padding: 0 100px 0 100px;
+        }
+
+        h4 {
+            padding-left: 100px;
         }
 
         figure {
